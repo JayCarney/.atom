@@ -5,13 +5,14 @@
     html:
       indent_size: 2
     scss:
-      align_assignments: true
+      convert_quotes: "single"
       indent_size: 2
       predefinedConfig: "zen"
       preserve_newlines: true
   "bracket-matcher":
     autocompleteBrackets: false
   core:
+    destroyEmptyPanes: false
     disabledPackages: [
       "wrap-guide"
       "emmet-snippets-compatibility"
@@ -23,14 +24,13 @@
     ]
   editor:
     fontFamily: "Hack"
-    fontSize: 15
     showIndentGuide: true
     softWrap: true
   emmet: {}
   "exception-reporting":
     userId: "90240a48-4298-3024-99ca-5e0a4e9b4279"
-  linter:
-    showErrorPanel: false
+  linter: {}
+  "linter-ui-default": {}
   minimap:
     moveCursorOnMinimapClick: true
     plugins:

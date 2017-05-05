@@ -17,6 +17,25 @@
 # If you are unfamiliar with CSON, you can read more about it here:
 # https://github.com/bevry/cson#what-is-cson
 
+#MODX modifiers
+'.punctuation.definition.block.modx':
+  'Encode HTML Entities':
+    'prefix': ':htmlent'
+    'body': ':htmlent'
+  'Stripe Spaces':
+    'prefix': ':stripString'
+    'body': ':stripString=` `'
+  'Not Empty':
+    'prefix': ':!empty'
+    'body': ':!empty=`$1`'
+  'URL Encode':
+    'prefix': ':urlencode'
+    'body': ':urlencode'
+  # From Extras
+  'URL Clean':
+    'prefix': ':urlClean'
+    'body': ':urlClean'
+
 '.source.css':
   # Quality of life
   'Position - Absolute':
@@ -232,16 +251,16 @@
     'body': '@include base-base(${1:\\$font-size}, ${2:\\$dff}, ${3:\\$trailing-white-space}, ${4:\\$leading-white-space});'
   'Margin Leader':
     'prefix': 'Mt'
-    'body': '@include margin-leader(${1:1}, ${2:\\$current-font-size});'
+    'body': '@include margin-leader(${1:1});'
   'Margin Trailer':
     'prefix': 'Mb'
-    'body': '@include margin-trailer(${1:1}, ${2:\\$current-font-size});'
+    'body': '@include margin-trailer(${1:1});'
   'Padding Leader':
     'prefix': 'Pt'
-    'body': '@include padding-leader(${1:1}, ${2:\\$current-font-size});'
+    'body': '@include padding-leader(${1:1});'
   'Padding Trailer':
     'prefix': 'Pb'
-    'body': '@include padding-trailer(${1:1}, ${2:\\$current-font-size});'
+    'body': '@include padding-trailer(${1:1});'
   'Neutralise':
     'prefix': 'Neu'
     'body': '@include neutralise();'

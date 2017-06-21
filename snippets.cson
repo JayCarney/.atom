@@ -110,6 +110,9 @@
   'Display: Block':
     'prefix': 'dis'
     'body': 'display: block;'
+  'Display: Flex':
+    'prefix': 'dif'
+    'body': 'display: flex;'
   'Float: Left':
     'prefix': 'fll'
     'body': 'float: left;'

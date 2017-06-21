@@ -30,7 +30,8 @@
   "exception-reporting":
     userId: "90240a48-4298-3024-99ca-5e0a4e9b4279"
   linter: {}
-  "linter-ui-default": {}
+  "linter-ui-default":
+    panelHeight: 69
   minimap:
     moveCursorOnMinimapClick: true
     plugins:
